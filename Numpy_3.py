@@ -1,8 +1,3 @@
-# Numpy Bootcamp
-# Nan and inf in Numpy (np.nan and np.inf)
-# nan = not a number and inf - infinite values
-# Follow Numpy.py book
-
 import numpy as np
 
 list1 = [[1,1,1],[2,2,2],[3,3,3]]
@@ -10,7 +5,7 @@ arr2d = np.array(list1)
 print (arr2d)
 arr2d.astype('str')
 arr2d = arr2d.astype(float)
-# coverting few values to nan and inf
+
 # can only convert float (confirmation needed)
 np.nan
 np.inf
@@ -35,8 +30,6 @@ arr2d.mean()
 arr2d.max()
 arr2d.min()
 arr2d.std()
-# standerd daviation predicts how much a product can go up and down from mean value
-#In statistics, the standard deviation is a measure of the amount of variation or dispersion of a set of values.
 arr2d.var() #  Variance is sqr of std
 arr2d.cumsum()  # cumulative sum
 
