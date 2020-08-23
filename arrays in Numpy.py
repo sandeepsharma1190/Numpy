@@ -4,27 +4,24 @@ from numpy import *
 arr = array([1,2,3,4,5])
 print(arr.dtype)    # to check datatype
 
-#for int + float values, #Numpy coverts all values automatically
 from numpy import *
 arr = array([1,2,3,4,5.0])
-print(arr.dtype)    # to check datatype
+print(arr.dtype) 
 
-arr+2   # to add 2, we cant performce this operation in list
+arr+2
 
-arr = array([1,2,3,4,5], float) #float will convert all values into float
+arr = array([1,2,3,4,5], float)
 print(arr.dtype)
 
-'''linspace'''#linspace (start, end and parts)
+#linspace
 # lin_arr = linspace(0,15,20) 
 #count will start from 0, it will go till 15, but in 20 parts
 
 print (lin_arr)
-'''lin_arr = linspace(0,15) in this case, 0 to 15 will be break into 50 parts, 
-which is default in linspace'''
 
-#arange (a range)
+#arange
 range_arr = arange(1,15,2)
-print (range_arr)       #output : - [ 1  3  5  7  9 11 13]
+print (range_arr) 
 
 # zeros
 arr_z = zeros(5)
@@ -62,16 +59,16 @@ arr1 = array([1,2,3,4,5])
 arr2 = arr1
 print (arr1)
 print (arr2)
-print (id(arr1))    #System address is same
+print (id(arr1))
 print (id(arr2))
-#Shallow copy - if we will make any change in arr1, change will happen in arr2 as well.
-arr1[1] = 7 #value will change for arr2 as well
-'''or - Shallow copy (same as above)'''
+arr1[1] = 7
+
+#Shallow copy
 arr1 = array([1,2,3,4,5])
 arr2 = arr1.view()
 print (arr1)
 print (arr2)
-print (id(arr1))    #System address is different now
+print (id(arr1))
 print (id(arr2))
 
 '''or Deep copy'''
@@ -79,23 +76,6 @@ arr1 = array([1,2,3,4,5])
 arr2 = arr1.copy()
 print (arr1)
 print (arr2)
-print (id(arr1))    #System address is different now
+print (id(arr1))
 print (id(arr2))
-arr1[1] = 7     #Wont make changes in arr2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+arr1[1] = 7
